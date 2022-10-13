@@ -1,0 +1,32 @@
+.clothing-items {
+  margin: 40px 30px;
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+  }
+}
+
+.clothing-item {
+  &-link {
+    text-decoration: none;
+  }
+  &-img {
+    width: 150px;
+    height: 150px;
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.5s;
+    }
+  }
+  &-tag {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #242424;
+    text-align: center;
+    margin-top: 16px;
+  }
+}

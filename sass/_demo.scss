@@ -1,0 +1,126 @@
+.demo {
+  margin: 90px 24px 120px;
+  padding: 40px 0;
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &-more-link {
+    font-weight: 500;
+    font-size: 16px;
+    color: #242424;
+    text-decoration: none;
+    transition: all 0.5s;
+
+    &:hover {
+      text-decoration: underline;
+      color: #4e5364;
+      transition: all 0.5s;
+    }
+  }
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  &-card {
+    width: 320px;
+    height: 500px;
+    position: relative;
+    &-catalog {
+      width: 450px;
+      height: 600px;
+    }
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 110px;
+      height: 35px;
+      padding: 8px 8px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 19px;
+      color: #000000;
+      background: #f2f2f2;
+    }
+    &-tag {
+      font-weight: 500;
+      font-size: 16px;
+      color: #242424;
+      margin-top: 12px;
+    }
+    &-colors,
+    &-prices {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 5px;
+    }
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 40px;
+  color: #242424;
+  text-align: left;
+}
+
+.color {
+  &-black,
+  &-peach,
+  &-beige,
+  &-grey {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  }
+  &-black {
+    background-color: #000000;
+  }
+  &-peach {
+    background-color: #de6353;
+  }
+  &-grey {
+    background-color: #f0f0f0;
+  }
+  &-beige {
+    background-color: #ffd98d;
+  }
+}
+
+.border {
+  border-radius: 50%;
+  padding: 2px;
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid #828282;
+    transition: all 0.5s;
+  }
+  &-active {
+    border: 2px solid #828282;
+  }
+}
+
+.old-price-option {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration-line: line-through;
+  color: #828282;
+}
+
+.new-price-option {
+  font-weight: 500;
+  font-size: 16px;
+  color: #242424;
+}

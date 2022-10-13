@@ -1,0 +1,88 @@
+.clothing-cards {
+  margin: 40px 0 60px;
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 1px; */
+  }
+  &-link {
+    background-color: #f2f2f2;
+    height: 72px;
+    a {
+      display: block;
+      margin: 0 auto;
+      padding: 24px 0;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: #242424;
+      transition: all 0.5s;
+      &:hover {
+        text-decoration: underline;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+.clothing-card {
+  width: 640px;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  padding: 0 25px;
+  position: relative;
+  margin: 1px;
+  &-1,
+  &-2,
+  &-3,
+  &-4,
+  &-5,
+  &-6 {
+    background-size: cover;
+    object-fit: cover;
+  }
+  &-1,
+  &-5 {
+    background: url("../images/clothing-cards/hoody.jpg");
+  }
+  &-2,
+  &-6 {
+    background: url("../images/clothing-cards/polo.jpg");
+  }
+  &-3,
+  &-4 {
+    background: url("../images/clothing-cards/tshirt.jpg");
+  }
+  &-descr {
+    position: absolute;
+    bottom: 70px;
+    z-index: 22;
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    color: #ffffff;
+  }
+  &-link {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transition: all 0.5s;
+    &:hover {
+      border-bottom: 2px solid #4e4e4e;
+      color: #4e4e4e;
+      transition: all 0.5s;
+    }
+  }
+}

@@ -1,0 +1,274 @@
+/* adaptive version */
+@media screen and (max-width: 428px) {
+  .header {
+    &-wrapper {
+      justify-content: space-around;
+    }
+    &-contacts {
+      display: none;
+    }
+  }
+  .lang {
+    &-chevron {
+      display: none;
+    }
+  }
+  .navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    justify-content: center;
+    padding: 15px;
+  }
+  .subheader {
+    &-wrapper {
+      justify-content: center;
+    }
+    &-nav {
+      display: none;
+    }
+  }
+  .promo {
+    &-title {
+      font-size: 64px;
+      margin-top: 110px;
+    }
+    &-btn {
+      margin-top: 63px;
+    }
+  }
+  .features {
+    &-wrapper {
+      flex-direction: column;
+    }
+  }
+  .clothing-items {
+    overflow-y: hidden;
+    overflow-x: visible;
+    &-wrapper {
+      width: 1200px;
+      overflow-x: scroll;
+      overflow: hidden;
+      gap: 5px;
+      padding: 12px 0;
+    }
+  }
+  .clothing {
+    &-cards {
+      &-wrapper {
+        flex-direction: column;
+        &-2 {
+          display: none;
+        }
+      }
+    }
+    &-card {
+      width: 428px;
+      height: 520px;
+      background-position-x: center;
+      background-position-y: center;
+      background-size: cover;
+      &-title {
+        font-size: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .demo {
+    margin: 30px 24px 60px;
+    overflow-y: hidden;
+    overflow-x: visible;
+    &-wrapper {
+      width: 1000px;
+      height: 600px;
+      overflow-x: scroll;
+      margin-top: -60px;
+    }
+    &-card {
+      width: 307px;
+      height: 403px;
+      &-img {
+        /* width: auto; */
+      }
+    }
+    &-more-link {
+      display: none;
+    }
+  }
+  .title {
+    font-size: 24px;
+  }
+  .reviews {
+    margin: 70px 0;
+    padding: 40px;
+    &-wrapper {
+      justify-content: center;
+    }
+  }
+  #review-card-2,
+  #review-card-3 {
+    display: none;
+  }
+  .about {
+    &-text {
+      font-size: 16px;
+    }
+  }
+  .footer {
+    &-contacts {
+      flex-direction: column;
+    }
+    &-menu {
+      width: 360px;
+      padding: 0 15px;
+      gap: 6px;
+    }
+    &-item {
+      a {
+        font-size: 13px;
+      }
+      &:nth-child(6) {
+        margin-left: 15px;
+      }
+      &:nth-child(5) {
+        margin-left: 40px;
+      }
+      &:nth-child(7) {
+        margin-right: 15px;
+        &:before {
+          content: none;
+        }
+      }
+      &:nth-child(2):before,
+      &:nth-child(3):before,
+      &:nth-child(4):before,
+      &:nth-child(6):before {
+        content: "\2022";
+        color: #828282;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+      &:nth-child(5):before {
+        content: none;
+      }
+    }
+  }
+  .payments {
+    margin-bottom: 80px;
+  }
+  .catalog {
+    row-gap: 10px;
+    &-path {
+      &-links {
+        font-size: 14px;
+      }
+    }
+    &-title {
+      font-size: 32px;
+    }
+    &-items {
+      flex-wrap: wrap;
+    }
+  }
+  .filter {
+    justify-content: space-between;
+    margin-bottom: -30px;
+  }
+  .sort {
+    &-by {
+      display: none;
+    }
+  }
+  .pagination {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    &-wrapper {
+      padding: 17px 20px;
+    }
+    &-contacts {
+      display: none;
+    }
+  }
+  .subheader {
+    &-wrapper {
+      gap: 3rem;
+    }
+    &-nav {
+      &-item {
+        padding: 0 10px;
+      }
+      &-link {
+        font-size: 11px;
+        font-weight: 500;
+      }
+    }
+  }
+  .clothing-items {
+    overflow-y: hidden;
+    overflow-x: visible;
+    &-wrapper {
+      width: 1400px;
+      overflow-x: scroll;
+      overflow: hidden;
+      gap: 20px;
+      padding: 12px 0;
+    }
+  }
+  .clothing {
+    &-card {
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+      &-descr {
+        font-size: 12px;
+      }
+    }
+  }
+  .features {
+    padding: 0 30px;
+  }
+  .feature {
+    &-card {
+      width: 330px;
+      height: 185px;
+    }
+  }
+  .demo {
+    &-card {
+      &-tag {
+        font-size: 14px;
+      }
+    }
+  }
+  .old-price-option,
+  .new-price-option {
+    font-size: 14px;
+  }
+  .reviewer {
+    &-name {
+      font-size: 14px;
+    }
+  }
+  .review {
+    &-card {
+      &-item {
+        font-size: 16px;
+      }
+    }
+    &-detail {
+      font-size: 10px;
+    }
+  }
+  time {
+    font-size: 12px;
+  }
+} ;
